@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: che-workspace-operator-catalog
+  namespace: openshift-marketplace
+spec:
+  sourceType: grpc
+  image: quay.io/dfestal/che-workspace-operator-index:0.1.1
+  displayName: Che Workspace Operator Catalog
+  publisher: RedHat Inc
